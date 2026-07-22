@@ -20,7 +20,14 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    
   },
-  "include": ["src"]
+  "include": ["src"],
+  "ignoreDeprecations": "6.0" // Added to fix the "baseUrl is deprecated" error
 }
