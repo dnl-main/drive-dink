@@ -8,7 +8,6 @@
     "allowArbitraryExtensions": true,
     "skipLibCheck": true,
 
-    /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
@@ -16,7 +15,6 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    /* Linting */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
@@ -26,8 +24,8 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    
+
+    "ignoreDeprecations": "6.0"
   },
-  "include": ["src"],
-  "ignoreDeprecations": "6.0" // Added to fix the "baseUrl is deprecated" error
+  "include": ["src"]
 }
